@@ -8,7 +8,7 @@ const lib = document.querySelector(".lib")
 const myLibrary = [];
 
 class Book {
-    constructor(id, title, author, pages, reades) {
+    constructor(id, title, author, pages, readed) {
         this.id = id;
         this.title = title;
         this.author = author;
