@@ -7,24 +7,23 @@ const lib = document.querySelector(".lib")
 
 const myLibrary = [];
 
-function Book(id, title, author, pages, readed) {
-    if (!new.target) {
-        throw Error("Use new");
+class Book {
+    constructor(id, title, author, pages, reades) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.readed = readed;
     }
 
-    this.id = id;
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.readed = readed;
-
-    this.info = function () {
+    info() {
         let text;
         if (readed) {
             text = "already readed";
         } else {
             text = "not read yet";
         }
+
         let s = this.title + " by " + this.author + ", " + this.pages + " pages, " + text;
 
         return s;
