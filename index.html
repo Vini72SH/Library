@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title> Library </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top">
+                <h1> LIBRARY </h1>
+                <button class="btn-add-book" id="btn-add-book"> ADD BOOK </button>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="content">
+            <div class="lib"></div>
+        </div>
+        <div class="add-book" id="add-book"> ADD BOOK
+            <div class="form">
+                <form action="#" method="post">
+                    <div>
+                        <label for="title"> Title <br></label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div>
+                        <label for="author"> Author <br></label>
+                        <input type="text" id="author" name="author" required>
+                    </div>
+                    <div>
+                        <label for="pages"> Pages <br></label>
+                        <input type="number" id="pages" name="pages" required>
+                    </div>
+                    <div class="read">
+                        <div>
+                            <input type="radio" id="readed" name="ticket_type" value="Readed">
+                            <label for="readed"> Read </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="not_readed" name="ticket_type" value="Not Read" checked required>
+                            <label for="not_readed"> Unread </label>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit"> Submit </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
